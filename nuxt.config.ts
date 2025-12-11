@@ -16,6 +16,12 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+    // FIX para impedir o @vue/devtools-kit de rodar no SSR
+  devtools: {
+    enabled: true,
+    },
+
   // --------------------------------------------------
 
   // --- 2. MELHORIA PARA A API (Pra conseguir configurar no .env) ---
