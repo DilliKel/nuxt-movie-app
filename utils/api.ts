@@ -1,9 +1,5 @@
 // utils/api.ts
-
 import { useRuntimeConfig, useFetch } from '#imports';
-// IMPORTAÇÃO REMOVIDA:
-// import { Ref } from 'vue'; 
-// O tipo Ref agora será reconhecido automaticamente pelo TypeScript do Nuxt/Vite.
 
 /**
  * Retorna a URL base para as imagens do TMDb.

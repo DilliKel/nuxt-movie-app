@@ -17,12 +17,10 @@ import MovieSearch from '~/components/MovieSearch.vue'
       </div>
 
       <!-- Botão de Categorias -->
-      <button
-        class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-lg font-semibold hover:bg-yellow-600"
-      >
+      <NuxtLink to="/categorias"
+      class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-lg font-semibold hover:bg-yellow-600">
         CATEGORIAS
-      </button>
-
+      </NuxtLink>
     </div>
   </header>
 </template>

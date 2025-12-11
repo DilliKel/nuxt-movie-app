@@ -42,6 +42,7 @@ async function fetchFromTmdb(endpoint: string, params: Record<string, string | n
     const res = await fetch(url.toString())
     if (!res.ok) throw new Error(`TMDB error ${res.status}`)
     const data = await res.json()
+
     // quando vem objeto com results
     if (Array.isArray(data.results)) {
       movies.value = data.results
@@ -134,6 +135,7 @@ watch(q, () => {
 </template>
 
 <style scoped>
+  
 /* mantém as imagens proporcionais */
 img {
   display: block;
